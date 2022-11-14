@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Superior from './src/components/parteSuperior';
+import Inferior from './src/components/parteInferior';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Superior/>
+      <Inferior/>
     </View>
   );
 }
@@ -13,8 +14,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 25
+    
   },
 });
